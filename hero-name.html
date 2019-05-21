@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dota 2 Quiz</title><link rel="shortcut icon" href="assets/img/immortal.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <link href="assets/css/style-quiz.css" rel="stylesheet">
+   <link href="assets/css/timer.css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+
+ <div id="appWrapper" class="container-fluid">
+  <div id="quizContainer">
+     <div class="title">Dota Quiz</div>
+     <div class="timer">
+            <p id="output"></p>
+            <input type="text" name="heroname" id="heroname" value="" class="search" onkeydown="search(this)" style="visibility: hidden;"><br> 
+            <div class="controls">
+              <button id="startPause" onclick="startPause('heroname','heroes','1');" value="1">1 MIN</button>
+              <button id="startPause" onclick="startPause('heroname','heroes','2');" value="2">2 MIN</button>
+              <button id="startPause" onclick="startPause('heroname','heroes','3');" value="3">3 MIN</button>
+            </div>
+      </div>
+     
+ </div>
+   <!--<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+   <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+   <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+   <button id="nextButton" class="next-btn" onClick="loadNextQuestion();">Next Question</button>-->
+   <div class="container" style="visibility: hidden;" id="heroes">
+
+
+
+
+  
+
+      <div class="row">
+        
+        <div class="col-sm-4" id="1" value="1"><h1>AGI</h1></div>
+        <div class="col-sm-4" id="2" value="2"><h1>INT</h1></div>
+        <div class="col-sm-4" id="3" value="3"><h1>STR</h1></div>
+
+      </div>
+
+  </div>
+
+
+   <div id="result" class="container result" style="display:none;"></div>
+
+ </div>
+
+
+
+
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="assets/js/question.js"></script>
+<!-- <script src="assets/js/quiz-script.js"></script> -->
+ <script src="assets/js/timer 2.js"></script>
+ <script src="assets/js/generateimg.js"></script>
+
+
+
+</body>
+</html>

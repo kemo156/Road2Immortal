@@ -1,0 +1,19 @@
+#divagi, #divstr,#divint {
+	text-align: center;
+   	height: 200px;
+    padding: 10px;
+
+}
+#divheroes {
+	padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    width: 100%;
+    height: 200px;
+   
+}
+
+#divboxes{
+	margin-top: 1em;
+}
